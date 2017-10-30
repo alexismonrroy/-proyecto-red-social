@@ -1,0 +1,101 @@
+package agencias;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+public class agencia {
+	
+	static List<Cliente> clientes = new ArrayList <Cliente>() ;
+	
+	static List<Aeropuerto> aero = new ArrayList <Aeropuerto>() ;
+	
+	
+	static List<Vuelo> vuelos = new ArrayList <Vuelo>() ;
+	
+	public static void main(String [] args) {
+		
+	
+		Date horaDePartida = new Date(2001, 12, 25, 15, 00) ;
+		Date horaDeLlegada = new Date(2001, 12, 26, 6, 00);
+		Date horaDePartida2 = new Date(2002, 3, 16, 20, 30) ;
+		Date horaDeLlegada2 = new Date(2002, 3, 17, 8, 00) ;
+		Date horaDePartida3 = new  Date(2000, 5, 14, 20, 05);
+		Date horaDeLlegada3 = new  Date(2000, 5, 15, 8, 00);
+		Date horaDePartida4 = new Date(2011, 6, 15, 12, 35) ;
+		Date horaDeLlegada4 = new Date(3000, 12, 31, 21, 00);
+		Date horaDePartida5 = new  Date(3001, 11, 6,13 , 00);
+		Date horaDeLlegada5 = new Date(1999, 11, 25, 8, 00)	;	
+		
+		
+		
+		
+				
+		Cliente jose = new Cliente( 52957493, "pedrito", "murdo",  19) ;
+		
+		Cliente santi = new Cliente( 56669834, "santiago","pirez" , 18) ;
+		
+		Cliente miguel = new Cliente( 59566662, "miguel","gonzales" , 32) ;
+		
+		Cliente jesus = new Cliente( 56668883, "jesus","hernandez" , 21) ;
+		
+		Cliente amandita = new Cliente( 56669834, "Amanda","odiarte" , 18) ;
+		clientes.add(jose) ;
+		clientes.add(santi) ;
+		clientes.add(miguel) ;
+		clientes.add(jesus) ;
+		clientes.add(amandita);
+		
+		
+		Aeropuerto Estados = new Aeropuerto("florida","EE.UU");
+		Aeropuerto carrasco = new Aeropuerto("Montevideo","Uruguay");
+		Aeropuerto chino = new Aeropuerto("pekin","China");
+		Aeropuerto reinounido = new Aeropuerto("londres","Inglaterra");
+		Aeropuerto argentina = new Aeropuerto("BsAs","Argentina");
+		Aeropuerto Canada = new Aeropuerto("Toronto","Canada");
+		Aeropuerto Argenvuelos = new Aeropuerto("Mendoza","Argentina");
+		
+		
+		
+		aero.add(Estados) ;
+		aero.add(carrasco) ;
+		aero.add(chino) ;
+		aero.add(reinounido) ;
+		aero.add(argentina);
+		aero.add(Canada) ;
+		aero.add(Argenvuelos) ;
+	
+		Vuelo vuelo1 = new Vuelo("a45jk",500,horaDePartida,horaDeLlegada);
+		Vuelo vuelo2 = new Vuelo("gtt554",600,horaDePartida2,horaDeLlegada2);
+		Vuelo vuelo3 = new Vuelo("yfgu098",590,horaDePartida3,horaDeLlegada3);
+		Vuelo vuelo4 = new Vuelo("ygcf54",499,horaDePartida4,horaDeLlegada4);
+		Vuelo vuelo5 = new Vuelo("huf234",535,horaDePartida5,horaDeLlegada5);
+	
+		
+		
+		vuelos.add(vuelo1);
+		vuelos.add(vuelo2);
+		vuelos.add(vuelo3);
+		vuelos.add(vuelo4);
+		vuelos.add(vuelo5);
+		
+		
+		
+	}
+public static boolean existeVuelo(String numVuelo){
+   
+	
+	
+	
+	
+	
+	
+	
+	
+	return false; 
+	
+	
+     }
+		
+}
+
